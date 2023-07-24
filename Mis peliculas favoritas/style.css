@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: black;
+    /* #0f0c29; */
+    color: aliceblue;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: .3s linear;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(243, 238, 238);
+    background-size: 200%;
+    background-clip: text;
+    animation: move 30s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form {
+    padding-block: 3rem;
+    display: grid;
+    place-content: center;
+}
+
+input {
+    box-shadow: 0 5px 10px #000;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container div {
+    flex: 2;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px;
+    padding: 13px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #21187727;
+}
+
+#container div img {
+    box-shadow: 0 10px 6px -6px rgba(6, 4, 12, 0.801);
+    max-width: 300px;
+    height: 450px;
+    border-radius: 5px;
+    transition: transform .5s ease;
+}
+
+#container div img:hover {
+    transform: scale(1.1);
+}
